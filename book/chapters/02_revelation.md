@@ -42,39 +42,39 @@ Meanwhile, this $89 toy was indestructible.
 
 "After this level."
 
-Bob waited. Danny lost. He always lost. He handed over the Game Boy without complaint.
+Bob waited. Danny lost. He always lost.
 
-Bob turned it over in his hands. Chunky gray plastic, the Nintendo logo worn almost smooth. The rubber buttons still had good travel. The screen was scratched but perfectly readable. The whole thing felt solid—well-designed, well-built, engineered for the worst-case scenario.
+"Come on," Bob said. "Let's go downstairs. I want to show you something in my workshop."
 
-Which, for a nine-year-old, was pretty bad.
+Danny followed him, still playing, eyes locked on the screen as he navigated the kitchen and started down the basement stairs. Bob had learned not to comment on this—kids could navigate entire houses without looking up from their Game Boys.
 
-"How often do you drop it?"
+Halfway down the stairs, Danny fumbled a rotation in *Tetris*. His stack topped out. "Aw, man!"
 
-"I dunno. A lot?"
+He pulled his eyes away from the screen to look where he was stepping—and the Game Boy slipped from his hands.
 
-As if on cue, the Game Boy slipped from Bob's hands.
-
-It happened in slow motion, the way these things do. Bob's coffee-slicked fingers lost their grip. The Game Boy tumbled end-over-end. Bob lunged for it, missed. It hit the tile floor of the kitchen with a sharp plastic crack.
+It happened in slow motion, the way these things do. The gray plastic brick tumbled end-over-end down the remaining stairs. Bob lunged for it, missed. It hit the concrete basement floor at the bottom with a sharp plastic crack, bounced once, skittered across the floor.
 
 *Oh no.*
 
-Danny looked up. "Uncle Bob!"
+"My Game Boy!" Danny bolted down the remaining stairs.
 
-Bob picked it up, heart racing. He'd just broken his nephew's Game Boy. Right after Christmas. This was the worst uncle failure possible.
+Bob followed, heart sinking. Danny's Christmas present. Broken in Bob's house because Bob had distracted him. This was the worst uncle failure possible.
 
-He turned it over, inspecting for damage.
+Danny picked it up, turned it over.
 
-Nothing. Not a scratch. Not a crack. Not even a scuff on the already-scuffed corner that had hit the floor.
+Bob looked over his shoulder, inspecting for damage.
 
-He pressed the power button. The Nintendo logo appeared. The *Tetris* theme song played. The game loaded exactly where Danny had left it.
+Nothing. Not a scratch. Not a crack. Not even a scuff on the already-scuffed corner that had hit the concrete.
 
-"See?" Danny said. "They don't break."
+Danny pressed the power button. The Nintendo logo appeared. The *Tetris* theme song played. The game loaded to the main menu, ready to start a new game.
 
-Bob stared at the device in his hands.
+"See?" Danny said, grinning. "They don't break."
+
+Bob stared at the device in Danny's hands.
 
 His brain, the part that had been stuck in a loop of worry and stress and impending failure for three months, suddenly engaged in a different direction.
 
-*This thing survives a drop onto tile.*
+*This thing survives a drop down stairs onto concrete.*
 
 *Our FieldLogger II's compass dies if you breathe on it too hard.*
 

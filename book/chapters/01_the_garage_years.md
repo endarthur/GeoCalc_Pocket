@@ -290,7 +290,7 @@ The garage still smelled like solder flux. But the disappointment had faded into
 
 ## Easter Weekend, 1991
 
-Bob spent Easter weekend at his brother-in-law's house in Denver. Family gathering. Too much food. Kids running around. A welcome distraction from the slow-motion failure of GeoStructure Systems.
+Bob spent Easter weekend at his sister's house in Denver. Family gathering. Too much food. Kids running around. A welcome distraction from the slow-motion failure of GeoStructure Systems.
 
 His nephew Danny had just turned nine. The kid was obsessed with a Game Boy he'd gotten for Christmas the previous year—played it constantly, barely looked up during dinner.
 
