@@ -1,38 +1,44 @@
 ---
-# Book Metadata for Pandoc
+# Book Metadata for Pandoc (Professional Template)
 
 # Title Information
 title: "Drop Test"
 subtitle: "How a Game Boy Became the Most Reliable Tool in Geology"
-author: "Author Name TBD"
+author: "Author Name"
 date: "2025"
+
+# Optional Dedication
+dedication: |
+  To the engineers who build things that work.
+
+  And to Bob's nephew Danny,
+  for being clumsy at exactly the right moment.
 
 # Language and Locale
 lang: en-US
 
-# Document Class (for LaTeX/PDF)
+# Document Class (for LaTeX/PDF) - handled by custom template
 documentclass: book
 classoption:
-  - oneside
   - 11pt
+  - twoside
+  - openright
 
-# Page Geometry (6×9 inch trade paperback)
+# Page Geometry (6×9 inch trade paperback) - handled by custom template
 geometry:
   - paperwidth=6in
   - paperheight=9in
-  - margin=0.75in
-  - top=1in
-  - bottom=1in
 
-# Typography
+# Typography - handled by custom template via fontspec
 fontsize: 11pt
 linestretch: 1.15
 mainfont: "Palatino"
+sansfont: "Helvetica"
 monofont: "Courier New"
 
 # Table of Contents
 toc: true
-toc-depth: 2
+toc-depth: 1
 toc-title: "Contents"
 lot: false  # List of tables
 lof: false  # List of figures
@@ -41,17 +47,14 @@ lof: false  # List of figures
 numbersections: true
 secnumdepth: 2
 
-# Bibliography
-bibliography: references/bibliography.bib
-csl: chicago-author-date.csl
-link-citations: true
+# Bibliography (uncomment when ready)
+# bibliography: references/bibliography.bib
+# csl: chicago-author-date.csl
+# link-citations: true
 
 # PDF Specific
 pdf-engine: xelatex
-colorlinks: true
-linkcolor: blue
-urlcolor: blue
-citecolor: blue
+template: templates/book_template.tex
 
 # EPUB Specific
 epub-cover-image: images/cover.jpg

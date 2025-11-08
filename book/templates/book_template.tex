@@ -1,0 +1,395 @@
+% Custom Book Template for "Drop Test"
+% Professional typography for narrative non-fiction with technical elements
+
+\documentclass[11pt,twoside,openright]{book}
+
+% ============================================================================
+% PACKAGES
+% ============================================================================
+
+\usepackage{fontspec}
+\usepackage{microtype}          % Improved typography
+\usepackage{geometry}           % Page layout
+\usepackage{fancyhdr}           % Headers and footers
+\usepackage{titlesec}           % Custom chapter/section styling
+\usepackage{titletoc}           % Custom TOC styling
+\usepackage{graphicx}           % Images
+\usepackage{xcolor}             % Colors
+\usepackage{lettrine}           % Drop caps
+\usepackage{enumitem}           % Better lists
+\usepackage{longtable}          % Tables across pages
+\usepackage{booktabs}           % Professional tables
+\usepackage{listings}           % Code blocks
+\usepackage{courier}            % Monospace font for code
+\usepackage{etoolbox}           % Programming tools
+\usepackage[hidelinks]{hyperref} % Hyperlinks (invisible in print)
+\usepackage{bookmark}           % Better PDF bookmarks
+
+% ============================================================================
+% COLOR SCHEME (subtle, professional)
+% ============================================================================
+
+\definecolor{chaptercolor}{RGB}{51, 51, 51}      % Dark gray for chapter numbers
+\definecolor{sectioncolor}{RGB}{0, 0, 0}         % Black for sections
+\definecolor{linkcolor}{RGB}{0, 51, 102}         % Dark blue for links
+\definecolor{codebackground}{RGB}{245, 245, 245} % Light gray for code
+\definecolor{codecomment}{RGB}{102, 102, 102}    % Gray for comments
+
+% ============================================================================
+% FONTS
+% ============================================================================
+
+\setmainfont{Palatino}[
+    Ligatures=TeX,
+    Numbers=OldStyle
+]
+
+\setsansfont{Helvetica}[
+    Scale=MatchLowercase,
+    Ligatures=TeX
+]
+
+\setmonofont{Courier New}[
+    Scale=0.9
+]
+
+% ============================================================================
+% PAGE GEOMETRY
+% ============================================================================
+
+\geometry{
+    paperwidth=6in,
+    paperheight=9in,
+    inner=0.875in,      % Wider for binding
+    outer=0.625in,
+    top=0.875in,
+    bottom=0.875in,
+    headsep=0.25in,
+    footskip=0.375in
+}
+
+% ============================================================================
+% HEADERS & FOOTERS
+% ============================================================================
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all
+
+% Running headers
+\fancyhead[LE]{\small\itshape\nouppercase{\leftmark}}  % Left even: chapter
+\fancyhead[RO]{\small\itshape Drop Test}                % Right odd: book title
+
+% Page numbers
+\fancyfoot[LE,RO]{\thepage}
+
+% Plain style for chapter openings
+\fancypagestyle{plain}{%
+    \fancyhf{}
+    \fancyfoot[LE,RO]{\thepage}
+    \renewcommand{\headrulewidth}{0pt}
+}
+
+% Remove header rule
+\renewcommand{\headrulewidth}{0pt}
+
+% ============================================================================
+% CHAPTER STYLING (Elegant with large numbers)
+% ============================================================================
+
+\titleformat{\chapter}[display]
+    {\normalfont\huge\bfseries\raggedright}
+    {\fontsize{72}{72}\selectfont\color{chaptercolor}\thechapter}
+    {20pt}
+    {\Huge\sffamily}
+    [\vspace{0.5ex}\titlerule]
+
+\titlespacing*{\chapter}{0pt}{-20pt}{40pt}
+
+% ============================================================================
+% SECTION STYLING
+% ============================================================================
+
+\titleformat{\section}
+    {\normalfont\Large\sffamily\bfseries}
+    {\thesection}
+    {1em}
+    {}
+
+\titleformat{\subsection}
+    {\normalfont\large\sffamily\bfseries}
+    {\thesubsection}
+    {1em}
+    {}
+
+\titleformat{\subsubsection}
+    {\normalfont\normalsize\sffamily\bfseries}
+    {\thesubsubsection}
+    {1em}
+    {}
+
+% ============================================================================
+% PART STYLING (For book parts)
+% ============================================================================
+
+\titleformat{\part}[display]
+    {\normalfont\Huge\sffamily\bfseries\centering}
+    {\fontsize{48}{48}\selectfont PART \thepart}
+    {20pt}
+    {\Huge}
+
+\titlespacing*{\part}{0pt}{100pt}{80pt}
+
+% ============================================================================
+% TABLE OF CONTENTS STYLING
+% ============================================================================
+
+\setcounter{tocdepth}{1} % Only chapters and sections
+
+\titlecontents{chapter}
+    [0em]
+    {\vspace{1em}\normalfont\sffamily\bfseries}
+    {\contentslabel{2em}}
+    {\hspace*{-2em}}
+    {\hfill\contentspage}
+
+\titlecontents{section}
+    [2em]
+    {\normalfont\small}
+    {\contentslabel{2.5em}}
+    {}
+    {\titlerule*[0.5pc]{.}\contentspage}
+
+% ============================================================================
+% CODE LISTINGS (for technical appendix)
+% ============================================================================
+
+\lstset{
+    basicstyle=\footnotesize\ttfamily,
+    backgroundcolor=\color{codebackground},
+    commentstyle=\color{codecomment}\itshape,
+    keywordstyle=\bfseries,
+    numberstyle=\tiny\color{gray},
+    stringstyle=\color{linkcolor},
+    breaklines=true,
+    breakatwhitespace=true,
+    columns=flexible,
+    keepspaces=true,
+    showstringspaces=false,
+    numbers=left,
+    numbersep=8pt,
+    tabsize=4,
+    frame=single,
+    framesep=6pt,
+    xleftmargin=12pt,
+    xrightmargin=6pt,
+    rulecolor=\color{gray!30}
+}
+
+% ============================================================================
+% QUOTATIONS & VERSE
+% ============================================================================
+
+\renewenvironment{quote}{%
+    \list{}{%
+        \leftmargin=2em
+        \rightmargin=2em
+        \topsep=0.5em
+        \partopsep=0pt
+        \parsep=0pt
+    }%
+    \item\relax\itshape
+}{%
+    \endlist
+}
+
+% ============================================================================
+% HYPERLINKS (invisible in print, active in digital)
+% ============================================================================
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=linkcolor,
+    citecolor=black,
+    pdftitle={Drop Test: How a Game Boy Became the Most Reliable Tool in Geology},
+    pdfauthor={Author Name},
+    pdfsubject={Technology, Geology, Game Boy, Innovation},
+    pdfkeywords={Game Boy, Geology, Field Instruments, Nintendo, Structural Geology}
+}
+
+% ============================================================================
+% WIDOW & ORPHAN CONTROL
+% ============================================================================
+
+\widowpenalty=10000
+\clubpenalty=10000
+\raggedbottom
+
+% ============================================================================
+% PARAGRAPH FORMATTING
+% ============================================================================
+
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0pt}
+
+% First paragraph after chapter/section is not indented (publishing standard)
+\makeatletter
+\let\@afterindenttrue\@afterindentfalse
+\makeatother
+
+% ============================================================================
+% DROP CAPS (optional - can be used at chapter starts)
+% ============================================================================
+
+\newcommand{\dropcap}[1]{%
+    \lettrine[lines=3, lhang=0.1, loversize=0.1]{#1}{}%
+}
+
+% ============================================================================
+% CUSTOM COMMANDS
+% ============================================================================
+
+% Scene break (three asterisks centered)
+\newcommand{\scenebreak}{%
+    \vspace{1em}%
+    \begin{center}%
+    * \quad * \quad *%
+    \end{center}%
+    \vspace{1em}%
+}
+
+% Emphasized text (alternative to italics)
+\newcommand{\strong}[1]{\textbf{#1}}
+
+% Technical term (for first use)
+\newcommand{\tech}[1]{\textit{#1}}
+
+% ============================================================================
+% FRONT MATTER SETUP
+% ============================================================================
+
+\newcommand{\halftitlepage}{%
+    \thispagestyle{empty}
+    \begin{center}
+        \vspace*{0.3\textheight}
+        {\Huge\sffamily\bfseries Drop Test}
+    \end{center}
+    \clearpage
+}
+
+\newcommand{\titlepage}{%
+    \thispagestyle{empty}
+    \begin{center}
+        \vspace*{0.15\textheight}
+
+        {\Huge\sffamily\bfseries Drop Test}
+
+        \vspace{1em}
+
+        {\LARGE\sffamily How a Game Boy Became the\\Most Reliable Tool in Geology}
+
+        \vfill
+
+        {\Large\itshape Author Name}
+
+        \vspace{2em}
+
+        {\large 2025}
+    \end{center}
+    \clearpage
+}
+
+\newcommand{\copyrightpage}{%
+    \thispagestyle{empty}
+    \null\vfill
+    \begin{flushleft}
+        \small
+        Copyright \copyright\ 2025 Author Name\\
+        All rights reserved.
+
+        \vspace{1em}
+
+        No part of this book may be reproduced in any form without permission from the publisher, except as permitted by U.S. copyright law.
+
+        \vspace{1em}
+
+        Published by [Publisher Name]\\
+        [Publisher Location]
+
+        \vspace{1em}
+
+        ISBN: [To be assigned]
+
+        \vspace{1em}
+
+        Book design by [Designer]\\
+        Cover design by [Designer]
+
+        \vspace{1em}
+
+        First Edition
+
+        \vspace{1em}
+
+        \textit{Game Boy is a trademark of Nintendo of America Inc.\\
+        This book is not affiliated with, endorsed by, or sponsored by Nintendo.}
+
+        \vspace{1em}
+
+        www.[website].com
+    \end{flushleft}
+    \clearpage
+}
+
+% ============================================================================
+% BEGIN DOCUMENT
+% ============================================================================
+
+\begin{document}
+
+% Front matter page numbering
+\frontmatter
+
+% Half-title page (optional, but professional)
+\halftitlepage
+
+% Full title page
+\titlepage
+
+% Copyright page
+\copyrightpage
+
+% Optional dedication page
+$if(dedication)$
+\thispagestyle{empty}
+\null\vfill
+\begin{center}
+\itshape
+$dedication$
+\end{center}
+\vfill\vfill\null
+\clearpage
+$endif$
+
+% Table of Contents
+$if(toc)$
+\tableofcontents
+\clearpage
+$endif$
+
+% Main matter
+\mainmatter
+
+% The actual content goes here
+$body$
+
+% Back matter
+\backmatter
+
+% Bibliography (if any)
+$if(bibliography)$
+\bibliographystyle{plainnat}
+\bibliography{$bibliography$}
+$endif$
+
+\end{document}
