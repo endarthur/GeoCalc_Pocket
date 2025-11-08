@@ -248,13 +248,43 @@ They debated it for three days. The garage whiteboard filled with product specs,
 
 By the end of March 1991, they were out of ideas.
 
-"We have three months left," Maggie announced. "If we don't have a winning product by July, we shut down. Agreed?"
+"We have four months left," Maggie announced. "If we don't have a winning product by July, we shut down. Agreed?"
 
 Bob and James nodded.
 
-Three months to save the company.
+Four months to save the company.
 
-Or three months to figure out what to do next.
+Or four months to figure out what to do next.
+
+\* \* \*
+
+## Survival Mode: April - November 1991
+
+They didn't find a winning product.
+
+But they didn't shut down either.
+
+Instead, they did what desperate engineers do: consulting work. Lots of it.
+
+Bob took a contract with an oil exploration company doing seismic analysis—boring work, but it paid $4,500 a month. Maggie consulted on a mining survey project that stretched from May through September. James debugged embedded systems for a defense contractor in Boulder, three days a week at $800 per day.
+
+It wasn't glamorous. It wasn't their company. But it kept the lights on.
+
+They stopped paying themselves salaries in April. They cancelled the office phone line and used Maggie's residential number. They stopped taking pre-orders for FieldLogger II and quietly processed the remaining returns.
+
+GeoStructure Systems wasn't dead. It was in suspended animation.
+
+The consulting work bought them time, but it didn't solve the fundamental problem: they didn't have a product that worked. Every month that passed was another month of existence without progress, another month where the dream stayed frozen.
+
+By November, the bank account had stabilized at $18,000—enough for four more months if they stayed lean, if the consulting work continued, if nothing went catastrophically wrong.
+
+But they were tired. Three years of failed products, returns, pivots, and near-death experiences had worn them down.
+
+"Maybe we should just accept this," Maggie said one evening in November, after a long day of writing mine survey reports. "We're consultants now. It's stable. It pays the bills."
+
+Bob and James didn't argue. What was there to say?
+
+The garage still smelled like solder flux. But the disappointment had faded into something worse: resignation.
 
 \* \* \*
 
@@ -262,7 +292,7 @@ Or three months to figure out what to do next.
 
 Bob spent Easter weekend at his brother-in-law's house in Denver. Family gathering. Too much food. Kids running around. A welcome distraction from the slow-motion failure of GeoStructure Systems.
 
-His nephew Danny had just turned nine. The kid was obsessed with a Game Boy he'd gotten for Christmas—played it constantly, barely looked up during dinner.
+His nephew Danny had just turned nine. The kid was obsessed with a Game Boy he'd gotten for Christmas the previous year—played it constantly, barely looked up during dinner.
 
 Bob watched him play *Tetris* at the kitchen table, tongue stuck out in concentration, mashing buttons with the fierce determination only nine-year-olds possess.
 
@@ -276,11 +306,11 @@ The idea began to form.
 
 But it would take one more thing—one specific moment—to crystallize it into something real.
 
-That moment would come nine months later, the day after Christmas 1991, when Danny dropped his Game Boy down a flight of stairs and changed everything.
+That moment would come eight months later, the day after Christmas 1991, when Danny dropped his Game Boy in his uncle's kitchen and changed everything.
 
 But in March 1991, none of that had happened yet.
 
-GeoStructure Systems had three months left.
+GeoStructure Systems had four months left.
 
 The garage still smelled like solder flux and disappointment.
 

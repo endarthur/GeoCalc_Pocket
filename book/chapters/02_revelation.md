@@ -12,21 +12,21 @@ Bob watched from the kitchen doorway as Danny mashed buttons on his Game Boy, tr
 
 It was the day after Christmas, 1991. Bob's sister's family had driven up from Denver to Golden for the holiday. Julie, Bob's wife, was in the living room with his sister, showing off photos from their summer camping trip. Bob had escaped to make coffee, grateful for a moment of quiet.
 
-He'd been thinking about work. He'd been thinking about work constantly for three months.
+He'd been thinking about work. He'd been thinking about work constantly for months.
 
-Four months of runway left. Maybe less. The FieldLogger II returns were accelerating. Every day brought another customer complaint: compass drift, battery drain, random lockups. Every return cost them $280 in lost manufacturing plus the labor to diagnose and maybe fix it. They couldn't fix most of them. The sensor was just unreliable.
+Three months of runway left. Maybe less. The consulting work had kept them afloat through the fall, but it wasn't sustainable forever. And the FieldLogger II returns kept trickling in—every returned unit a reminder of their failure. Compass drift, battery drain, random lockups. The sensor was fundamentally unreliable, and no amount of consulting income would fix that.
 
 Maggie wanted to pivot again. James thought they could fix it with better calibration software. Bob thought they were finished.
 
 "I'm gonna try again!" Danny announced, hitting the start button.
 
-Bob poured his coffee, watching the kid play. The Game Boy was a hand-me-down from Danny's older cousin—scratched, scuffed, the screen slightly yellowed. But it worked. Danny had been playing on it for two days straight. The original four AA batteries were still going.
+Bob poured his coffee, watching the kid play. The Game Boy was beat up—scratched, scuffed, the screen slightly yellowed from a year of heavy use. But it worked. Danny had been playing on it for two days straight. The original four AA batteries were still going.
 
 "How long have you had that?" Bob asked.
 
-"This Game Boy? Forever. Like, since I was seven. Jake gave it to me when he got his Game Gear."
+"This Game Boy? Forever. I got it for Christmas last year."
 
-Two years. A nine-year-old had been using this thing for two years. How many drops? How many thrown into backpacks, stuffed under couch cushions, forgotten in the back seat of cars?
+A whole year. A nine-year-old had been using this thing for a whole year. How many drops? How many times thrown into backpacks, stuffed under couch cushions, forgotten in the back seat of cars?
 
 "Does it ever break?"
 
@@ -82,7 +82,7 @@ His brain, the part that had been stuck in a loop of worry and stress and impend
 
 *This runs for 30 hours on four AA batteries. Our device gets eight hours on the same batteries, with lower brightness.*
 
-*This has been working for two years in the hands of a nine-year-old. Our devices fail after months in the careful hands of professional geologists.*
+*This has been working for a year in the hands of a nine-year-old. Our devices fail after weeks in the careful hands of professional geologists.*
 
 *What are we doing?*
 
@@ -241,7 +241,7 @@ James was nodding. "This is... actually not crazy."
 
 "It's completely crazy," Maggie said. But she was reading the napkin again.
 
-Bob pressed his advantage. "Look, we have four months of runway. Maybe less. Traditional product development would take eighteen months minimum. A Game Boy cartridge? We could have a working prototype in six weeks. A shippable product in six months. We'd need brutal focus, but it's possible."
+Bob pressed his advantage. "Look, we have three months of runway. Maybe less. The consulting work won't last forever. Traditional product development would take eighteen months minimum. A Game Boy cartridge? We could have a working prototype in six weeks. A shippable product in six months. We'd need brutal focus, but it's possible."
 
 "We don't know Game Boy programming."
 
@@ -265,7 +265,7 @@ Maggie looked at James. "What do you think?"
 
 James tapped the napkin. "I think Bob's right about the timeline. We don't have eighteen months. We maybe have six. And I think he's right about the hardware—the Game Boy is better than anything we've built. But—" he looked at Bob "—can we actually make it work? Can you and I and Mark learn Z80 assembly and build a stereonet plotter in six weeks?"
 
-"I don't know," Bob said honestly. "But I know we can't build FieldLogger III. So we either try this or we shut down."
+"I don't know," Bob said honestly. "But I know we can't build FieldLogger III. We can keep doing consulting work until the contracts dry up, or we can try to build something real. So we either try this or we accept that we're consultants now, not a product company."
 
 Silence.
 
