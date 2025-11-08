@@ -46,11 +46,11 @@ That lesson feels worth preserving.
 
 ---
 
-**A Note on the People**
+**A Note on the Characters**
 
-The people in this story are real. I've used their real names with permission. Some details of their personal lives have been fictionalized or omitted for privacy, but their professional contributions and quoted words are documented.
+The characters in this story are fictional, but they're based on the kinds of people who actually built niche technical products in the 1990s. If you worked at a small engineering company during that era—staying late to debug hardware, arguing over feature priorities, celebrating small victories—you may recognize the dynamics.
 
-Dr. Margaret Chen, Bob Kuwahara, James Okoye, Sarah Martinez, Kevin Park, and Lisa Rodriguez all contributed to this project by sharing their stories, answering countless questions, and fact-checking my work. Any errors are mine, not theirs.
+The personalities, motivations, and relationships are crafted to serve the story, but the engineering challenges, financial pressures, and technical decisions reflect real constraints of the period.
 
 ---
 
