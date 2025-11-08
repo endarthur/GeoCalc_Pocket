@@ -50,7 +50,7 @@ That lesson feels worth preserving.
 
 The people in this story are real. I've used their real names with permission. Some details of their personal lives have been fictionalized or omitted for privacy, but their professional contributions and quoted words are documented.
 
-Dr. Margaret Chen, Bob Kuwahara, James Okoye, Dr. Sarah Blackburn, Kevin Park, and Lisa Nakamura all contributed to this project by sharing their stories, answering countless questions, and fact-checking my work. Any errors are mine, not theirs.
+Dr. Margaret Chen, Bob Kuwahara, James Okoye, Sarah Martinez, Kevin Park, and Lisa Rodriguez all contributed to this project by sharing their stories, answering countless questions, and fact-checking my work. Any errors are mine, not theirs.
 
 ---
 
