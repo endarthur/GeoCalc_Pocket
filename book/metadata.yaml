@@ -1,0 +1,90 @@
+---
+# Book Metadata for Pandoc (Professional Template)
+
+# Title Information
+title: "Drop Test"
+subtitle: "How a Game Boy Became the Most Reliable Tool in Geology"
+author: "Kit Larson"
+date: "2025"
+
+# Optional Dedication
+dedication: |
+  To the engineers who build things that work.
+
+  And to Bob's nephew Danny,
+  for being clumsy at exactly the right moment.
+
+# Language and Locale
+lang: en-US
+
+# Document Class (for LaTeX/PDF) - handled by custom template
+documentclass: book
+classoption:
+  - 11pt
+  - twoside
+  - openright
+
+# Page Geometry (6×9 inch trade paperback) - handled by custom template
+geometry:
+  - paperwidth=6in
+  - paperheight=9in
+
+# Typography - handled by custom template via fontspec
+fontsize: 11pt
+linestretch: 1.15
+mainfont: "TeX Gyre Pagella"
+sansfont: "TeX Gyre Heros"
+monofont: "TeX Gyre Cursor"
+
+# Table of Contents
+toc: true
+toc-depth: 1
+toc-title: "Contents"
+lot: false  # List of tables
+lof: false  # List of figures
+
+# Numbering
+numbersections: true
+secnumdepth: 2
+
+# Bibliography (uncomment when ready)
+# bibliography: references/bibliography.bib
+# csl: chicago-author-date.csl
+# link-citations: true
+
+# PDF Specific
+pdf-engine: xelatex
+template: templates/book_template.tex
+
+# EPUB Specific
+epub-cover-image: images/cover.png
+epub-metadata: |
+  <dc:publisher>Self-Published</dc:publisher>
+  <dc:rights>Copyright © 2025 Kit Larson. All rights reserved.</dc:rights>
+  <dc:subject>Technology, Geology, History, Game Boy, Niche Computing</dc:subject>
+
+# HTML Specific
+css: templates/style.css
+self-contained: true
+
+# Metadata for E-readers
+keywords:
+  - Game Boy
+  - Geology
+  - Field Instruments
+  - Structural Geology
+  - Retro Computing
+  - Niche Technology
+  - Innovation
+  - Nintendo
+
+description: |
+  The story of GeoCalc Pocket—a professional geological field instrument built on Nintendo Game Boy hardware. A tale of constraint-driven innovation, unlikely solutions, and the intersection of video games and science.
+
+# Copyright
+rights: "Copyright © 2025 Kit Larson. All rights reserved."
+
+# ISBN (when available)
+# isbn: "978-X-XXXX-XXXX-X"
+
+---
