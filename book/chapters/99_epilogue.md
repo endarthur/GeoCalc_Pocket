@@ -1,4 +1,4 @@
-# Epilogue
+# Epilogue {.unnumbered}
 
 ## December 2023
 

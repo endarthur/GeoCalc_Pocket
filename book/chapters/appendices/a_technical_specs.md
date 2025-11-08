@@ -26,6 +26,60 @@
 - 20 × 18 visible tiles (8×8 pixels each)
 - Up to 40 sprites (8×8 or 8×16)
 
+### Tile-Based Display System
+
+```
+Game Boy Screen (160 × 144 pixels)
+┌────────────────────────────────────────┐
+│ 20 tiles wide × 18 tiles tall         │
+│                                        │
+│  Each tile = 8×8 pixels                │
+│                                        │
+│  ┌──┬──┬──┬──┬──┬──┬──┬──┬──┬──┐     │
+│  │  │  │  │  │  │  │  │  │  │  │ ... │
+│  ├──┼──┼──┼──┼──┼──┼──┼──┼──┼──┤     │
+│  │  │  │  │▓▓│▓▓│▓▓│  │  │  │  │ ... │
+│  ├──┼──┼──┼──┼──┼──┼──┼──┼──┼──┤     │
+│  │  │  │▓▓│▓▓│░░│▓▓│▓▓│  │  │  │ ... │
+│  ├──┼──┼──┼──┼──┼──┼──┼──┼──┼──┤     │
+│  │  │  │▓▓│░░│░░│░░│▓▓│  │  │  │ ... │
+│  ├──┼──┼──┼──┼──┼──┼──┼──┼──┼──┤     │
+│  │  │  │▓▓│▓▓│░░│▓▓│▓▓│  │  │  │ ... │
+│  ├──┼──┼──┼──┼──┼──┼──┼──┼──┼──┤     │
+│  │  │  │  │▓▓│▓▓│▓▓│  │  │  │  │ ... │
+│  └──┴──┴──┴──┴──┴──┴──┴──┴──┴──┘     │
+│           ▲                            │
+│    Stereonet circle built              │
+│    from individual tiles               │
+└────────────────────────────────────────┘
+
+The Challenge: Updating VRAM during active
+display causes visible tearing/flicker.
+
+The Solution: Shadow Buffer Technique
+(Sarah Martinez's breakthrough, Chapter 4)
+
+Step 1: Build image in RAM
+┌──────────────┐
+│  Work RAM    │
+│  $C000-$CC3F │  ← Shadow Buffer
+│              │     (copy of VRAM)
+│  Construct   │
+│  stereonet   │
+│  here        │
+└──────────────┘
+
+Step 2: Copy to VRAM during VBlank
+┌──────────────┐
+│  Video RAM   │
+│  $8000-$9FFF │  ← Fast copy during
+│              │     VBlank window
+│  Display     │     (~4,560 cycles)
+│  from here   │
+└──────────────┘
+
+Result: Smooth, flicker-free updates!
+
 **Audio:**
 - 4 channels (2 square, 1 wave, 1 noise)
 - Stereo output
@@ -49,6 +103,75 @@
 ---
 
 ## GeoCalc Memory Map
+
+### Visual Memory Layout
+
+```
+┌─────────────────────────────────────────────────┐
+│  Game Boy Address Space (64 KB)                │
+├─────────────────────────────────────────────────┤
+│ $0000 ┌───────────────────────────────────────┐ │
+│       │  ROM Bank 0 (Fixed, 16 KB)           │ │
+│       │  • Interrupt vectors                 │ │
+│       │  • Cartridge header                  │ │
+│       │  • Core engine code                  │ │
+│ $3FFF └───────────────────────────────────────┘ │
+│ $4000 ┌───────────────────────────────────────┐ │
+│       │  ROM Banks 1-7 (Switchable, 16 KB)   │ │
+│       │  • Projection math (Bank 1)          │ │
+│       │  • Tools & rotation (Bank 2)         │ │
+│       │  • UI & data handling (Bank 3)       │ │
+│       │  • Help screens (Bank 4)             │ │
+│       │  • Lookup tables (Bank 5)            │ │
+│       │  • Analysis functions (Bank 6)       │ │
+│ $7FFF └───────────────────────────────────────┘ │
+│ $8000 ┌───────────────────────────────────────┐ │
+│       │  Video RAM (8 KB)                    │ │
+│       │  • Tile data                         │ │
+│       │  • Background map                    │ │
+│ $9FFF └───────────────────────────────────────┘ │
+│ $A000 ┌───────────────────────────────────────┐ │
+│       │  Cartridge SRAM (32 KB)              │ │
+│       │  • Saved measurements (2 KB)         │ │
+│       │  • Project metadata (2 KB)           │ │
+│       │  • Reserved space (28 KB)            │ │
+│ $BFFF └───────────────────────────────────────┘ │
+│ $C000 ┌───────────────────────────────────────┐ │
+│       │  Work RAM (8 KB)                     │ │
+│       │                                       │ │
+│       │  ┌─────────────────────────────────┐ │ │
+│ $C000 │  │ Shadow Buffer (3,136 bytes)     │ │ │
+│       │  │ Copy of VRAM for flicker-free   │ │ │
+│       │  │ screen updates                   │ │ │
+│ $CC3F │  └─────────────────────────────────┘ │ │
+│ $CC40 │  ┌─────────────────────────────────┐ │ │
+│       │  │ Measurement Data (400 bytes)    │ │ │
+│       │  │ Up to 100 measurements in RAM   │ │ │
+│ $CE0F │  └─────────────────────────────────┘ │ │
+│ $CE10 │  ┌─────────────────────────────────┐ │ │
+│       │  │ Lookup Tables (820 bytes)       │ │ │
+│       │  │ Sin/cos, radius calculations    │ │ │
+│ $D143 │  └─────────────────────────────────┘ │ │
+│ $D144 │  ┌─────────────────────────────────┐ │ │
+│       │  │ Stack (256 bytes)               │ │ │
+│ $D243 │  └─────────────────────────────────┘ │ │
+│ $D244 │  ┌─────────────────────────────────┐ │ │
+│       │  │ Variables & Temporary (3,328 B) │ │ │
+│       │  │ General purpose work space      │ │ │
+│ $DFFF │  └─────────────────────────────────┘ │ │
+│       └───────────────────────────────────────┘ │
+│ $FE00 ┌───────────────────────────────────────┐ │
+│       │  Sprite OAM (160 bytes)              │ │
+│ $FE9F └───────────────────────────────────────┘ │
+│ $FF00 ┌───────────────────────────────────────┐ │
+│       │  I/O Registers (128 bytes)           │ │
+│ $FF7F └───────────────────────────────────────┘ │
+│ $FF80 ┌───────────────────────────────────────┐ │
+│       │  High RAM (127 bytes)                │ │
+│       │  Fast access for critical code      │ │
+│ $FFFE └───────────────────────────────────────┘ │
+└─────────────────────────────────────────────────┘
+```
 
 ### Cartridge (MBC1, 128 KB ROM + 32 KB SRAM)
 
@@ -123,6 +246,56 @@ typedef struct {
 ## Projection Mathematics
 
 ### Equal-Area (Schmidt) Projection
+
+```
+Stereonet Coordinate System
+────────────────────────────────────────────
+
+         North (0°/360°)
+              ↑
+              │
+              │
+    West ←────┼────→ East
+    (270°)    │    (90°)
+              │
+              ↓
+          South (180°)
+
+┌─────────────────────────────────────┐
+│         Stereonet Circle            │
+│                                     │
+│         N                           │
+│         ↑                           │
+│     ╱───┼───╲                       │
+│   ╱     │     ╲                     │
+│  │      ·      │  W ←─────→ E      │
+│  │             │                    │
+│   ╲           ╱                     │
+│     ╲───┼───╱                       │
+│         ↓                           │
+│         S                           │
+│                                     │
+│  Plotting a measurement:            │
+│  - Trend (T): Angle from North      │
+│  - Plunge (P): Angle from horizontal│
+│                                     │
+│  Example: T=045°, P=30°             │
+│         N                           │
+│         │                           │
+│      ╱──┼──╲                        │
+│    ╱    │   ╲                       │
+│   │     │    │                      │
+│   │    ·•────│→ Northeast, 30° down │
+│   │          │                      │
+│    ╲        ╱                       │
+│      ╲────╱                         │
+│                                     │
+│  Plunge controls radial distance:   │
+│  P=0°  → center (horizontal)        │
+│  P=45° → halfway to edge            │
+│  P=90° → edge (vertical)            │
+└─────────────────────────────────────┘
+```
 
 **Input:** Trend T (0-359°), Plunge P (0-90°)
 
@@ -270,6 +443,62 @@ MAX232 Level Shifter
 DB-9 Serial Connector
   ↓
 PC COM Port (9600 baud, 8-N-1)
+```
+
+### Protocol Flow
+
+```
+┌──────────────┐              ┌──────────────┐
+│   Game Boy   │              │      PC      │
+│  (GeoCalc)   │              │  (Manager)   │
+└──────┬───────┘              └──────┬───────┘
+       │                             │
+       │  ┌─ User launches upload ──┤
+       │  │                          │
+       │◄─┤  "UPLOAD\n"              │
+       │  │                          │
+  Verify│  │                          │
+  data  │  │                          │
+       │  │                          │
+       ├─►│  "READY\n"               │
+       │  │                          │
+       ├─►│  [Project Header]        │
+       │  │  128 bytes               │
+       │  │                          │
+       ├─►│  [Measurement #1]        │
+       ├─►│  [Measurement #2]        │
+       ├─►│  [Measurement #3]        │
+       │  │  ...                     │
+       ├─►│  [Measurement #N]        │
+       │  │  4 bytes each            │
+       │  │                          │
+       ├─►│  [CRC16 Checksum]        │
+       │  │  2 bytes                 │
+       │  │                    Verify│
+       │  │                    data  │
+       │  │                          │
+       │◄─┤  "OK\n"                  │
+       │  │                          │
+  Clear│  │                          │
+  buffer│ │                          │
+       │  │                          │
+       ├─►│  "DONE\n"                │
+       │  │                    Save  │
+       │  │                    to    │
+       │  │                    file  │
+       │  └─ Transfer complete ──────┤
+       │                             │
+      ┌▼──────────┐         ┌────────▼────┐
+      │ Ready for │         │ data.csv    │
+      │ new data  │         │ created!    │
+      └───────────┘         └─────────────┘
+
+Timing:
+ - Handshake: ~100ms
+ - Header: ~150ms
+ - Per measurement: ~5ms
+ - Checksum: ~20ms
+ - Total (100 measurements): ~12 seconds
 ```
 
 ### Protocol

@@ -4,7 +4,7 @@
 # Title Information
 title: "Drop Test"
 subtitle: "How a Game Boy Became the Most Reliable Tool in Geology"
-author: "Author Name"
+author: "Kit Larson"
 date: "2025"
 
 # Optional Dedication
@@ -60,7 +60,7 @@ template: templates/book_template.tex
 epub-cover-image: images/cover.jpg
 epub-metadata: |
   <dc:publisher>Self-Published</dc:publisher>
-  <dc:rights>Copyright © 2025 Author Name. All rights reserved.</dc:rights>
+  <dc:rights>Copyright © 2025 Kit Larson. All rights reserved.</dc:rights>
   <dc:subject>Technology, Geology, History, Game Boy, Niche Computing</dc:subject>
 
 # HTML Specific
@@ -82,7 +82,7 @@ description: |
   The story of GeoCalc Pocket—a professional geological field instrument built on Nintendo Game Boy hardware. A tale of constraint-driven innovation, unlikely solutions, and the intersection of video games and science.
 
 # Copyright
-rights: "Copyright © 2025 Author Name. All rights reserved."
+rights: "Copyright © 2025 Kit Larson. All rights reserved."
 
 # ISBN (when available)
 # isbn: "978-X-XXXX-XXXX-X"
