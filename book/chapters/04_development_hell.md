@@ -12,7 +12,7 @@ They needed someone who understood users. Someone who could write documentation,
 
 And they needed another programmer, because Mark was going back to his real job. He'd done his part—got them off the ground. But he had a mortgage and a family and couldn't keep working for equity and hope.
 
-Maggie found Sarah Blackburn through the geology network. Dr. Sarah Blackburn, age 34, PhD from Stanford, currently at Chevron doing structural analysis for petroleum exploration. Good pay, soul-crushing work. She was tired of computers that only worked at headquarters.
+Maggie found Sarah Martinez through the geology network. Dr. Sarah Martinez, age 34, PhD from Stanford, currently at Chevron doing structural analysis for petroleum exploration. Good pay, soul-crushing work. She was tired of computers that only worked at headquarters.
 
 The pitch meeting was at a coffee shop in Golden.
 

@@ -242,7 +242,7 @@ The story transcended geology. It became an example of:
 
 ---
 
-**Dr. Sarah Blackburn** (Age 52)
+**Dr. Sarah Martinez** (Age 52)
 - Director of Field Testing, Trimble
 - Has dropped over 2,000 devices in the name of science
 - Tested devices on every continent (including Antarctica, twice)
@@ -322,7 +322,7 @@ Michael Rodriguez, whose career changed at an outcrop: "That moment when the fol
 
 Dr. Patricia Morrison, whose students finally understood: "We didn't lose those students to other fields. GeoCalc saved them for structural geology."
 
-Sarah Blackburn, testing devices in Antarctica: "Field reliability isn't a feature. It's a philosophy."
+Sarah Martinez, testing devices in Antarctica: "Field reliability isn't a feature. It's a philosophy."
 
 The legacy is in the people. The students who understood. The theses that were saved. The careers that were enabled. The data that survived.
 
