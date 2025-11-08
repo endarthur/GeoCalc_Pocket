@@ -251,7 +251,7 @@ By November 1999, they were gone.
 
 The company burned through $200K in 18 months. Sold maybe 200 units total.
 
-Maggie called the founder—Paul Chen, geologist from University of Sydney—in December 1999.
+Maggie called the founder—Paul Wong, geologist from University of Sydney—in December 1999.
 
 "Paul? Maggie Chen from GeoStructure. I heard GeoPro shut down. I'm sorry."
 

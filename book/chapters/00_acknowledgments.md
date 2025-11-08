@@ -2,7 +2,7 @@
 
 This book exists because a lot of people were generous with their time, their memories, and their patience with my endless questions about Game Boy memory architecture.
 
-**Bob Chen** sat for seventeen hours of interviews, opened his garage archive of development notes and prototype cartridges, and never once complained when I asked him to explain tile-based graphics for the fourth time. Sarah Martinez walked me through her shadow buffer breakthrough on a whiteboard in her Portland kitchen and trusted me to tell the story right. Lisa Rodriguez sent me pages of handwritten assembly code comments and patiently corrected my understanding of how MBC3 cartridges actually work. Kevin Wu demonstrated the AeroGeo 3D prototype on his living room couch and let me keep asking "but why?" until I understood. Danny Chen (all grown up now) confirmed that yes, he really was that clumsy, and no, he doesn't regret it.
+**Bob Kuwahara** sat for seventeen hours of interviews, opened his garage archive of development notes and prototype cartridges, and never once complained when I asked him to explain tile-based graphics for the fourth time. Sarah Martinez walked me through her shadow buffer breakthrough on a whiteboard in her Portland kitchen and trusted me to tell the story right. Lisa Rodriguez sent me pages of handwritten assembly code comments and patiently corrected my understanding of how MBC3 cartridges actually work. Kevin Wu demonstrated the AeroGeo 3D prototype on his living room couch and let me keep asking "but why?" until I understood. Danny Kuwahara (all grown up now) confirmed that yes, he really was that clumsy, and no, he doesn't regret it.
 
 **Jennifer Wu** shared the most difficult interview of this entire project—reliving the day her laptop fell in that creek—with grace and generosity I'll never forget. Thank you for trusting me with your story.
 
@@ -16,7 +16,7 @@ My beta readers—**Emma Yoshida**, **Marcus Tran**, **Dr. Sarah J. Bishop**, an
 
 **Jeremy Walsh**, electrical engineer and Game Boy modding expert, verified my technical details and caught at least a dozen places where I'd confidently described something that was physically impossible. Any remaining technical errors are places where I didn't listen to Jeremy, and I accept full responsibility.
 
-**Dr. Amanda Chen** (no relation to Bob) at the University of Washington helped me understand modern digital field geology tools and confirmed that yes, people really did use Game Boys for science and yes, it was actually a good idea.
+**Dr. Amanda Liu** at the University of Washington helped me understand modern digital field geology tools and confirmed that yes, people really did use Game Boys for science and yes, it was actually a good idea.
 
 The community at **GBDev forums** answered obscure questions about RGBDS assembly syntax at 2 AM and never once asked why I needed to know. Y'all are doing the lord's work keeping this knowledge alive.
 
@@ -24,7 +24,7 @@ The community at **GBDev forums** answered obscure questions about RGBDS assembl
 
 My agent, **Rebecca Stein**, believed in this project when it was just "a book about a Game Boy but for geology?" and helped me figure out what story I was actually trying to tell. My editor, **David Park**, made this book immeasurably better and only laughed at me a little bit when I turned in a first draft with four appendices.
 
-**Professor Michael Chen** at Stanford taught me how to use a Brunton compass and generously did not make fun of me when I couldn't read a topographic map. The field course was worth it, I promise.
+**Professor Michael Zhang** at Stanford taught me how to use a Brunton compass and generously did not make fun of me when I couldn't read a topographic map. The field course was worth it, I promise.
 
 My climbing partners—**Jess**, **Tyler**, and **Sam**—put up with me talking about Game Boys on belay for three years. Thanks for not dropping me.
 

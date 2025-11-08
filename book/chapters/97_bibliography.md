@@ -113,7 +113,7 @@ History of geological mapping. Shows the long tradition of field measurement Geo
 ## Technical Articles & Papers
 
 **"Digital Data Acquisition in Field Geology: A Comparative Study"**
-Martinez, S., Rodriguez, L., and Chen, R., *Journal of Geoscience Education*, Vol. 43, No. 2, 1995, pp. 156-167.
+Martinez, S., Rodriguez, L., and Kuwahara, R., *Journal of Geoscience Education*, Vol. 43, No. 2, 1995, pp. 156-167.
 Sarah, Lisa, and Bob's paper on GeoCalc Pocket field trials. Worth reading for the technical validation.
 
 **"Palmtop Computers for Field Data Acquisition"**
@@ -130,7 +130,7 @@ Collection of articles about repurposing Game Boys for scientific applications. 
 Active community of Game Boy developers. Forums, tutorials, and tools. The knowledge base keeping Game Boy development alive.
 
 **GeoCalc Systems Archive** (geocalc-systems.org)
-Company website maintained by Bob Chen with historical information, product specs, and development stories. Last updated 2024.
+Company website maintained by Bob Kuwahara with historical information, product specs, and development stories. Last updated 2024.
 
 **Retro Game Mechanics Explained** (YouTube)
 Technical deep-dives into retro gaming hardware. Several excellent Game Boy episodes.
@@ -145,7 +145,7 @@ Includes development notes, marketing materials, and correspondence.
 Correspondence files, 1994-1998. Includes the original C&D letter to GeoCalc Systems and subsequent resolution.
 
 **Personal Collections**
-Bob Chen's development archive, Sarah Martinez's field notebooks, and Lisa Rodriguez's annotated assembly code all proved essential primary sources.
+Bob Kuwahara's development archive, Sarah Martinez's field notebooks, and Lisa Rodriguez's annotated assembly code all proved essential primary sources.
 
 ---
 
@@ -153,7 +153,7 @@ Bob Chen's development archive, Sarah Martinez's field notebooks, and Lisa Rodri
 
 This book is based on three years of research including interviews with twenty-three engineers, geologists, and students who used GeoCalc Pocket; archival research at Stanford University and Nintendo of America; and hands-on technical investigation of the hardware and software. Where dialogue appears, it's reconstructed from interviews, contemporary notes, and email archives. Technical details were verified by multiple sources when possible.
 
-The engineering challenges, development timeline, and field testing stories are all documented in contemporary notes and confirmed by multiple interview subjects. Bob Chen's garage archive of development prototypes, bug reports, and handwritten assembly code comments was particularly valuable.
+The engineering challenges, development timeline, and field testing stories are all documented in contemporary notes and confirmed by multiple interview subjects. Bob Kuwahara's garage archive of development prototypes, bug reports, and handwritten assembly code comments was particularly valuable.
 
 If you worked on GeoCalc Pocket, used one in the field, or have memories to share, the author would love to hear from you. Contact information is available at kitlarson.tech.
 
