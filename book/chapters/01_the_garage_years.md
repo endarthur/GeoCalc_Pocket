@@ -230,7 +230,7 @@ Every product required custom PCB design, firmware development, case manufacturi
 
 It was a terrible business case.
 
-But they'd already invested three years and $68,000. Maggie had quit her PhD. Bob had abandoned a promising research career. James had turned down good job offers to stay with the company.
+But they'd already invested three years and $68,000. Maggie had finished her PhD but abandoned the academic career it promised. Bob had left a research position doing work he loved. James had turned down good job offers to stay with the company.
 
 They couldn't just quit.
 

@@ -414,9 +414,9 @@ She pulled out her field notebook, flipped to a page of calculations. The compan
 
 Bob looked at James and Mark. James shrugged. Mark did quick mental math.
 
-"Six months," Bob said. "December 1993. We can have a real product by then."
+"Nine months," Bob said. "December. We can have a real product by then."
 
-"Not eight months?"
+"Not a full year?"
 
 "We'll cut features. Focus on core functionality. Ship something that works, update it later."
 
@@ -436,10 +436,10 @@ Eight weeks ago, Bob had pitched a crazy idea about building geology tools on vi
 
 Now they had a prototype.
 
-In six more months, they'd have a product.
+In nine more months, they'd have a product.
 
 In three years, they'd have changed structural geology.
 
-But first, they had to survive the next six months.
+But first, they had to survive the next nine months.
 
 That was going to be the hard part.
