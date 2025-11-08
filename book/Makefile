@@ -12,9 +12,11 @@ TEMPLATES := templates
 
 # Pandoc options
 PANDOC := pandoc
-PANDOC_PDF_OPTS := --pdf-engine=xelatex --toc --number-sections
-PANDOC_EPUB_OPTS := --toc --epub-cover-image=$(IMAGES)/cover.jpg
-PANDOC_HTML_OPTS := --toc --standalone --self-contained
+# Markdown format with extensions for proper rendering
+MARKDOWN_FORMAT := markdown+pipe_tables+backtick_code_blocks+fenced_code_attributes+definition_lists+fancy_lists+startnum+example_lists+escaped_line_breaks+smart+yaml_metadata_block
+PANDOC_PDF_OPTS := --pdf-engine=xelatex --toc --number-sections -f $(MARKDOWN_FORMAT)
+PANDOC_EPUB_OPTS := --toc --epub-cover-image=$(IMAGES)/cover.jpg -f $(MARKDOWN_FORMAT)
+PANDOC_HTML_OPTS := --toc --standalone --self-contained -f $(MARKDOWN_FORMAT)
 PANDOC_COMMON_OPTS := --resource-path=.:$(IMAGES)
 
 # Targets
@@ -63,6 +65,7 @@ $(OUTPUT_DIR)/docx/book.docx: $(METADATA) $(ALL_MD) | $(OUTPUT_DIR)/docx
 	$(PANDOC) $(METADATA) $(CHAPTERS) $(APPENDICES) \
 		-o $@ \
 		--toc \
+		-f $(MARKDOWN_FORMAT) \
 		$(PANDOC_COMMON_OPTS)
 	@echo "DOCX built: $@"
 
