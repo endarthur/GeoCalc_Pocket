@@ -190,12 +190,15 @@ Serial number: 11,600.
 It sits in Trimble's office in Westminster, Colorado (former GeoStructure HQ).
 
 Mounted in a display case with:
-- Original 1994 GeoCalc Pocket (Serial #001)
-- Jennifer Wu's thesis-saving GeoCalc DX
-- The cracked prototype from Bob's 4 AM crisis
-- The napkin from the original pitch
+- Production sample: GeoCalc Pocket (1994)
+- Production sample: GeoCalc DX (1996)
+- Production sample: GeoCalc Advance (2001)
+- Production sample: GeoCalc Advance SP (2004)
+- Final unit: GeoCalc Advance SP Serial #11,600 (2010)
 
-A history of the company in five cartridges.
+A history of the product line in five cartridges.
+
+Bob kept the personal artifacts: Serial #001, the cracked prototype, the napkin. Those meant too much to give away. Jennifer Wu still has her thesis-saving cartridge—last Bob heard, she uses it as a teaching prop at UT Austin.
 
 ## What Smartphones Couldn't Replace
 
