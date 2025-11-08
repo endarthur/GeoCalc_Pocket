@@ -1,0 +1,87 @@
+---
+# Book Metadata for Pandoc
+
+# Title Information
+title: "Drop Test"
+subtitle: "How a Game Boy Became the Most Reliable Tool in Geology"
+author: "Author Name TBD"
+date: "2025"
+
+# Language and Locale
+lang: en-US
+
+# Document Class (for LaTeX/PDF)
+documentclass: book
+classoption:
+  - oneside
+  - 11pt
+
+# Page Geometry (6×9 inch trade paperback)
+geometry:
+  - paperwidth=6in
+  - paperheight=9in
+  - margin=0.75in
+  - top=1in
+  - bottom=1in
+
+# Typography
+fontsize: 11pt
+linestretch: 1.15
+mainfont: "Palatino"
+monofont: "Courier New"
+
+# Table of Contents
+toc: true
+toc-depth: 2
+toc-title: "Contents"
+lot: false  # List of tables
+lof: false  # List of figures
+
+# Numbering
+numbersections: true
+secnumdepth: 2
+
+# Bibliography
+bibliography: references/bibliography.bib
+csl: chicago-author-date.csl
+link-citations: true
+
+# PDF Specific
+pdf-engine: xelatex
+colorlinks: true
+linkcolor: blue
+urlcolor: blue
+citecolor: blue
+
+# EPUB Specific
+epub-cover-image: images/cover.jpg
+epub-metadata: |
+  <dc:publisher>Self-Published</dc:publisher>
+  <dc:rights>Copyright © 2025 Author Name. All rights reserved.</dc:rights>
+  <dc:subject>Technology, Geology, History, Game Boy, Niche Computing</dc:subject>
+
+# HTML Specific
+css: templates/style.css
+self-contained: true
+
+# Metadata for E-readers
+keywords:
+  - Game Boy
+  - Geology
+  - Field Instruments
+  - Structural Geology
+  - Retro Computing
+  - Niche Technology
+  - Innovation
+  - Nintendo
+
+description: |
+  The story of GeoCalc Pocket—a professional geological field instrument built on Nintendo Game Boy hardware. A tale of constraint-driven innovation, unlikely solutions, and the intersection of video games and science.
+
+# Copyright
+rights: "Copyright © 2025 Author Name. All rights reserved."
+
+# ISBN (when available)
+# isbn: "978-X-XXXX-XXXX-X"
+
+---
