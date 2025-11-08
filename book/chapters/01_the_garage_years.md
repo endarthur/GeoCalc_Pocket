@@ -76,7 +76,7 @@ Over beers at a Golden brewpub that night, they sketched out a business on bar n
 
 They would call it GeoStat Instruments.
 
-By December, Maggie had submitted her dissertation and rented the garage. Bob had quit his postdoc. James had turned down an offer from Hewlett-Packard. They'd pooled their savings ($43,000), taken out a small business loan ($25,000), and ordered their first batch of components.
+By December, Maggie had submitted her dissertation and cleared out the garage. Bob had quit his postdoc. James had turned down an offer from Hewlett-Packard. They'd pooled their savings ($43,000), taken out a small business loan ($25,000), and ordered their first batch of components.
 
 In January 1987, they shipped their first product.
 
