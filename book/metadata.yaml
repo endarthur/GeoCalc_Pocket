@@ -57,9 +57,7 @@ pdf-engine: xelatex
 template: templates/book_template.tex
 
 # EPUB Specific
-# Note: Uncomment the next line when you have a cover image at images/cover.jpg
-# See images/COVER_README.md for cover specifications and design guidance
-# epub-cover-image: images/cover.jpg
+epub-cover-image: images/cover.png
 epub-metadata: |
   <dc:publisher>Self-Published</dc:publisher>
   <dc:rights>Copyright © 2025 Kit Larson. All rights reserved.</dc:rights>
